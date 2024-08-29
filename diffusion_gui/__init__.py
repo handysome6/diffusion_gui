@@ -1,0 +1,1 @@
+from .gui.gui_widget import DiffusionGUI

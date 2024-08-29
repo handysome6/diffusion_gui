@@ -1,0 +1,1 @@
+### Python 3.10 required for Ubuntu since fr-robot driver issues
