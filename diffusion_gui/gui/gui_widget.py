@@ -67,10 +67,12 @@ class DiffusionGUI(QWidget):
         self.convert_process.readyReadStandardOutput.connect(self.on_rtab_output)
         self.convert_process.finished.connect(self.on_convert_finished)
 
-        saving_path = Path("data")
+        saving_path = Path("/home/hkcrc/code/test_diffusion_gui/data")
         saving_path.mkdir(parents=True, exist_ok=True)
         idx = len(list(saving_path.iterdir()))
+        print(idx)
         self.convert_process.start("rtabmap-export", ["--output", f"{idx}", "--output_dir", f"{saving_path}", '/home/hkcrc/.ros/rtabmap.db'])
+        print("done")
 
     def on_rtab_output(self):
         data = self.convert_process.readAllStandardOutput()

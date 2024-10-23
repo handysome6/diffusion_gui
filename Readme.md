@@ -8,8 +8,10 @@
 `python main.py`
 
 ### Typical pipeline
-1. start RTABmap
-2. start robotic arm scirpt
+1. start RTABmap: 
+    `cd /home/hkcrc/code/test_ws/src/spacemouse_pkg/launch`
+    `roslaunch multi_cam.launch`
+2. start robotic arm scirpt, clicking
 3. wait for automatic moving and 3D scan
 4. stop rtabmap
 5. convert rtabmap db file to pointcloud

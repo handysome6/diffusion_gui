@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'gui.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.6.3
+## Created by: Qt User Interface Compiler version 6.7.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -15,18 +15,19 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QHBoxLayout, QLabel, QLineEdit,
-    QPushButton, QSizePolicy, QTextBrowser, QVBoxLayout,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QHBoxLayout, QLabel, QSizePolicy,
+    QTextBrowser, QVBoxLayout, QWidget)
+
+from qfluentwidgets import (LineEdit, PrimaryPushButton, PushButton)
 
 class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(640, 480)
+        Form.resize(718, 480)
         self.verticalLayout = QVBoxLayout(Form)
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.pushButton_AUTO = QPushButton(Form)
+        self.pushButton_AUTO = PrimaryPushButton(Form)
         self.pushButton_AUTO.setObjectName(u"pushButton_AUTO")
 
         self.verticalLayout.addWidget(self.pushButton_AUTO)
@@ -38,12 +39,12 @@ class Ui_Form(object):
 
         self.horizontalLayout.addWidget(self.label)
 
-        self.lineEdit_scriptpath = QLineEdit(Form)
+        self.lineEdit_scriptpath = LineEdit(Form)
         self.lineEdit_scriptpath.setObjectName(u"lineEdit_scriptpath")
 
         self.horizontalLayout.addWidget(self.lineEdit_scriptpath)
 
-        self.pushButton_runscript = QPushButton(Form)
+        self.pushButton_runscript = PushButton(Form)
         self.pushButton_runscript.setObjectName(u"pushButton_runscript")
 
         self.horizontalLayout.addWidget(self.pushButton_runscript)
@@ -53,22 +54,22 @@ class Ui_Form(object):
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.pushButton_startrtab = QPushButton(Form)
+        self.pushButton_startrtab = PushButton(Form)
         self.pushButton_startrtab.setObjectName(u"pushButton_startrtab")
 
         self.horizontalLayout_2.addWidget(self.pushButton_startrtab)
 
-        self.pushButton_stoprtab = QPushButton(Form)
+        self.pushButton_stoprtab = PushButton(Form)
         self.pushButton_stoprtab.setObjectName(u"pushButton_stoprtab")
 
         self.horizontalLayout_2.addWidget(self.pushButton_stoprtab)
 
-        self.pushButton_convertrtab = QPushButton(Form)
+        self.pushButton_convertrtab = PushButton(Form)
         self.pushButton_convertrtab.setObjectName(u"pushButton_convertrtab")
 
         self.horizontalLayout_2.addWidget(self.pushButton_convertrtab)
 
-        self.pushButton_runpicking = QPushButton(Form)
+        self.pushButton_runpicking = PushButton(Form)
         self.pushButton_runpicking.setObjectName(u"pushButton_runpicking")
 
         self.horizontalLayout_2.addWidget(self.pushButton_runpicking)
@@ -102,7 +103,7 @@ class Ui_Form(object):
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Messages...</p></body></html>", None))
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI'; font-size:9pt;\">Messages...</span></p></body></html>", None))
     # retranslateUi
 
